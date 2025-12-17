@@ -1,20 +1,36 @@
+body {
+    background: url('images/AIMicrochipBackground.png') no-repeat center center fixed;
+    background-size: cover;
+}
+/* Kinetic animation for h1 text */
+
+/* Slide-in from left animation for h1 text */
+.kinetic-text {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100vw);
+    animation: slide-in-left 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /* Highlight containers for visual debugging */
-.hero-section {
-    outline: 2px solid #ff9800;
-}
-.hero-container {
-    outline: 2px dashed #2196f3;
-}
-.hero-content {
-    outline: 2px dotted #4caf50;
-}
-.hero-image-container {
-    outline: 2px solid #e91e63;
-}
 /* Define color variables for easy adjustments */
 :root {
     --primary-pink: #ff0055;    /* The accent pink color */
-    --bg-dark: #111111;         /* Main background color */
+    
     --bg-card: #1f1f1f;         /* Lighter dark for icon backgrounds */
     --text-white: #ffffff;      /* Headings */
     --text-grey: #b0b0b0;       /* Body text */
@@ -71,7 +87,8 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.01em;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 0.5rem;
@@ -199,6 +216,6 @@ body {
     }
     
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
