@@ -1,3 +1,16 @@
+/* Highlight containers for visual debugging */
+.hero-section {
+    outline: 2px solid #ff9800;
+}
+.hero-container {
+    outline: 2px dashed #2196f3;
+}
+.hero-content {
+    outline: 2px dotted #4caf50;
+}
+.hero-image-container {
+    outline: 2px solid #e91e63;
+}
 /* Define color variables for easy adjustments */
 :root {
     --primary-pink: #ff0055;    /* The accent pink color */
@@ -45,13 +58,13 @@ body {
 /* --- Left Column Styling --- */
 .hero-content {
     flex: 1; /* Takes up available space */
-    font-size: 2.2rem;
+    max-width: 600px;
 }
 
 .eyebrow {
     display: block;
     color: var(--text-grey);
-    font-size: 2.2rem;
+    font-size: 0.9rem;
     letter-spacing: 2px;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -68,7 +81,7 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
-    font-size: 3.5rem;
+}
 
 .hero-content p {
     color: var(--text-grey);
@@ -186,6 +199,6 @@ body {
     }
     
     .hero-content h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 }
